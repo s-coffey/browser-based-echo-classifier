@@ -1,0 +1,25 @@
+body
+{
+    font-family: 'Andika New Basic', sans-serif;
+    font-size: 14px;
+}
+.card
+{
+    background-color: #dfbf9f;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    max-width: 350px;
+    padding: 20px;
+    text-align: center;
+}
+#sign_b
+{
+    width: 270px;
+}
+.help-block
+{
+    color: red;
+}
