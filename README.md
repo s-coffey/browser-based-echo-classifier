@@ -1,1 +1,3 @@
-# browser-based-echo-classifier
+# Browser Based Echo Classifier
+
+Coded by Lahiru Ariyasinghe
