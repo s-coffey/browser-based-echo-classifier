@@ -1,6 +1,7 @@
 # Browser Based Echo Classifier
 
 Coded by Lahiru Ariyasinghe
+
 Funded by the New Zealand Health Research Council, grant 19/734.
 
 
@@ -14,5 +15,9 @@ Although state-of-the-art DICOM viewers such as MicroDICOM and TomTec provide th
 
 To this end, as part of a current project comparing echo images with cardiac MRI, we developed a browser-based echo view classifier (with a python backend) that loads and runs within a standard web browser. This tool reduced the time overhead of echo view classification and image quality assessment by nearly 70% compared to using a separate DICOM viewer.
 
-The main functional steps of our software tool are as follows: (1) Given a set of echo images, the backend python pipeline automatically separates them into two categories, single-frame echo images and multi- frame echo images. (2) The single-frame echo images are converted into png files (DICOM to PNG) and multi-frame echo images to cine mp4 video files (DICOM to MP4). In the case of multi-frame images, it converts the first frame into a png file in addition to the mp4 file (to provide more clarity for the user during view classification). (3) The files generated in step (2) (png and mp4 files) together with their metadata are loaded into a web server with a database backend. (4) After logging in to the web app via a browser window, a human expert can view, analyze, perform view classification (e.g. parasternal short axis view) and grade the image quality (e.g. very good, good, moderate, acceptable, etc.) of the echo files. The user's input is recorded in the backend database, and the actual echo image files (DICOM files) (at step (1)) will be automatically moved to an appropriate directory (i.e. into the PSAX directory) in a pre-defined directory tree.
+The main functional steps of our software tool are as follows: 
+- (1) Given a set of echo images, the backend python pipeline automatically separates them into two categories, single-frame echo images and multi- frame echo images.
+- (2) The single-frame echo images are converted into png files (DICOM to PNG) and multi-frame echo images to cine mp4 video files (DICOM to MP4). In the case of multi-frame images, it converts the first frame into a png file in addition to the mp4 file (to provide more clarity for the user during view classification).
+- (3) The files generated in step (2) (png and mp4 files) together with their metadata are loaded into a web server with a database backend.
+- (4) After logging in to the web app via a browser window, a human expert can view, analyze, perform view classification (e.g. parasternal short axis view) and grade the image quality (e.g. very good, good, moderate, acceptable, etc.) of the echo files. The user's input is recorded in the backend database, and the actual echo image files (DICOM files) (at step (1)) will be automatically moved to an appropriate directory (i.e. into the PSAX directory) in a pre-defined directory tree.
 
